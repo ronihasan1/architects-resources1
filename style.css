@@ -144,10 +144,11 @@ main>section {
 }
 
 /* Features you will love & enjoy */
-.feature{
+.feature {
     gap: 100px;
     justify-items: center;
 }
+
 .feature-card {
     border-radius: 8px;
     background-color: white;
@@ -180,22 +181,25 @@ main>section {
     font-size: 1rem;
     margin: 0;
 }
-.right-slide{
+
+.right-slide {
     position: relative;
     top: 0;
     left: 0;
 }
 
-.button-years{
+.button-years {
     font-size: 4rem;
 }
-#btn{
+
+#btn {
     position: absolute;
     left: -73px;
     bottom: -35px;
     font-weight: 600;
 }
-.experience{
+
+.experience {
     font-size: 1.5rem;
 }
 
@@ -281,7 +285,7 @@ footer {
     .navbar,
     .nav-links,
     .teams,
-    .feature{
+    .feature {
         flex-direction: column;
     }
 
@@ -308,24 +312,28 @@ footer {
         width: 100%;
         padding-left: 0;
     }
-    .feature{
+
+    .feature {
         gap: 10px;
     }
-    #btn{
+
+    #btn {
         left: 0;
         bottom: 0;
         padding: 10px;
     }
 
     #footer-caption {
-        width: 100%;
+        text-align: center;
+        margin: 0 auto;
     }
 }
 
 /* medium */
 @media screen and (min-width:577px) and (max-width:992px) {
 
-    .teams {
+    .teams,
+    .feature {
         flex-direction: column;
     }
 
@@ -340,5 +348,24 @@ footer {
         gap: 30px;
         justify-items: center;
     }
+    .feature-img {
+        width: 100%;
+        padding-left: 0;
+    }
+    .feature {
+        gap: 10px;
+    }
+
+    #btn {
+        left: 0;
+        bottom: 0;
+        padding: 10px;
+    }
+
+  #footer-caption {
+        text-align: center;
+        margin: 0 auto;
+    }
+
 
 }
