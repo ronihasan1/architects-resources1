@@ -44,7 +44,8 @@
     border: none;
 }
 
-main ,.footer {
+main,
+.footer {
     max-width: 1440px;
 
     margin: 0 auto;
@@ -143,10 +144,10 @@ main>section {
 }
 
 /* Features you will love & enjoy */
-.left-feature {
-    padding: 35px 58px 35px 0;
+.feature{
+    gap: 100px;
+    justify-items: center;
 }
-
 .feature-card {
     border-radius: 8px;
     background-color: white;
@@ -155,42 +156,49 @@ main>section {
     margin-bottom: 20px;
 }
 
-.feature-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin: 10px 0 10px 0;
+.feature-cd-title,
+.feature-description {
+    margin: 0 0 5px 0;
 }
 
-#section-title-id {
+.feature-description {
+    padding-bottom: 20px;
+}
+
+#feature-title {
     padding-left: 30px;
-    padding-right: 60px;
     border-left: 5px solid #FF900E;
+    font-weight: 600;
+}
+
+.feature-card,
+#feature-tittle {
+    font-size: 1.25rem;
+}
+
+.feature-description {
+    font-size: 1rem;
     margin: 0;
 }
-
-.right-feature {
+.right-slide{
     position: relative;
     top: 0;
     left: 0;
 }
 
-.feature-img {
-    padding-left: 104px;
-}
-
-#exprience-badge {
-    padding: 45px 42px;
-    font-size: 1.5rem;
-    font-weight: 500;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
-.experience-years {
+.button-years{
     font-size: 4rem;
-    font-weight: 700;
 }
+#btn{
+    position: absolute;
+    left: -73px;
+    bottom: -35px;
+    font-weight: 600;
+}
+.experience{
+    font-size: 1.5rem;
+}
+
 
 
 /* some related style  Facts */
@@ -253,14 +261,16 @@ main>section {
 }
 
 /* footer */
-footer{
-   padding: 60px 0 80px;
+footer {
+    padding: 60px 0 80px;
 }
+
 #footer-caption {
     max-width: 650px;
     margin: 0 auto;
 }
-.footer{
+
+.footer {
     padding: 40px 0;
     background-color: rgba(255, 144, 14, 0.1);
 }
@@ -271,7 +281,7 @@ footer{
     .navbar,
     .nav-links,
     .teams,
-    .Features {
+    .feature{
         flex-direction: column;
     }
 
@@ -298,9 +308,18 @@ footer{
         width: 100%;
         padding-left: 0;
     }
-   #footer-caption{
-    width: 100%;
-   }
+    .feature{
+        gap: 10px;
+    }
+    #btn{
+        left: 0;
+        bottom: 0;
+        padding: 10px;
+    }
+
+    #footer-caption {
+        width: 100%;
+    }
 }
 
 /* medium */
